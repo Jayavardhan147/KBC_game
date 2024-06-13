@@ -1,4 +1,5 @@
 questions = [
+          #question of your choice
     [
         "Which language was used to create fb?", "Python", "French",
         "JavaScript", "Php", "None", 4
@@ -48,13 +49,15 @@ questions = [
         "Lal Bahadur Shastri", 3
     ]
 ]
-levels = [1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000]
+levels = [1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000] #game levels
 money = 0
 for i in range(0, len(questions)):
 
   question = questions[i]
   print(f"\nQuestion for Rs. {levels[i]}")
+  # to print question
   print(question[i])
+  # to print Options
   print(f"a. {question[1]}          b. {question[2]} ")
   print(f"c. {question[3]}          d. {question[4]} ")
   reply = int(input("Enter your answer (1-4) or  0 to quit:\n"))
